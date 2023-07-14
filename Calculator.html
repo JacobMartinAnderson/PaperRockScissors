@@ -13,11 +13,17 @@
 </form>
 
 <script>
+
+    let ans = prompt("does this work?");
+
+    console.log(" ans = " + ans );
+
     function calcSum(){
-        let bbox1 = document.getElementsById("box1") [0] .value;
-        let bbox2 = document.getElementsById("box2") [0] .value;
+        let box1 = document.getElementById("box1").value;
+        let box2 = document.getElementById("box2").value;
         let sum = Number(box1) + Number(box2);
-        document.getElementsById("+")[0].value = sum;
+        console.log(" box1 " +  box1 + " box2 " + box2 + " sum " + sum); 
+        document.getElementById("+").value = sum;
      }
 </script>
 
